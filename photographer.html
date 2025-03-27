@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer X</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+.fireflies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    overflow: hidden;
+}
+
+
+.firefly {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 0, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
+    animation: move 5s linear infinite, blink 2s ease-in-out infinite;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(50vw, 20vh);
+    }
+    50% {
+        transform: translate(-30vw, 50vh);
+    }
+    75% {
+        transform: translate(40vw, -20vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+.firefly:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s, 0.5s;
+}
+.firefly:nth-child(2) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 1s, 1s;
+}
+.firefly:nth-child(3) {
+    top: 50%;
+    left: 70%;
+    animation-delay: 2s, 1.5s;
+}
+.firefly:nth-child(4) {
+    top: 70%;
+    left: 30%;
+    animation-delay: 3s, 2s;
+}
+.firefly:nth-child(5) {
+    top: 90%;
+    left: 80%;
+    animation-delay: 4s, 2.5s;
+}
+.firefly:nth-child(6) {
+    top: 20%;
+    left: 60%;
+    animation-delay: 1.5s, 1s;
+}
+.firefly:nth-child(7) {
+    top: 40%;
+    left: 10%;
+    animation-delay: 2.5s, 1.5s;
+}
+.firefly:nth-child(8) {
+    top: 60%;
+    left: 40%;
+    animation-delay: 3.5s, 2s;
+}
+.firefly:nth-child(9) {
+    top: 80%;
+    left: 20%;
+    animation-delay: 4.5s, 2.5s;
+}
+.firefly:nth-child(10) {
+    top: 10%;
+    left: 90%;
+    animation-delay: 5s, 3s;
+}
+
+.image-zoom {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.image-zoom.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-6">
+        <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" /></svg>              
+            <span class="text-xl font-bold">Human Studio</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-gray-400">kembali</a>
+        </nav>
+        <a href="index.html" class="md:hidden p-2 border border-white rounded">kembali</a>
+    </header>
+    <main class="text-center py-20 relative overflow-hidden">
+            <div class="fireflies">
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+            <div class="firefly"></div>
+        </div>
+        
+        <div class="space-y-4 px-10">
+            <p class="text-gray-500">about me</p>
+            <h1 class="text-4xl font-bold">
+                hello,ini contoh portofolio untuk photographer,<br>
+                semua berawal dari sini.
+            </h1>
+            <p class="text-gray-500 max-w-md mx-auto">
+                banyak foto dengan style yang berbeda
+            </p>
+            <div class="space-x-4">
+                <button class="px-6 py-2 bg-white text-black rounded-full">Contact me</button>
+                <a href="" class="text-gray-500 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="text-gray-500 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="" class="text-gray-500 hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="relative grid grid-cols-2 md:grid-cols-4 gap-2 mt-20">
+            <!-- Gradient di atas -->
+            <div class="absolute top-0 left-0 z-50 right-0 bg-gradient-to-b from-black to-transparent via-black/90 w-full h-[250px]"></div>
+        
+            <!-- Gambar dengan kelas image-zoom -->
+            <img src="img2/1.jpg" class="w-full h-full object-cover image-zoom">
+            <img src="img2/9.jpg" class="w-full h-full object-cover image-zoom">
+            <img src="img2/4.jpg" class="w-full h-full object-cover image-zoom">
+            <img src="img2/3.jpg" alt="Photographer adjusting camera settings" class="w-full h-full object-cover image-zoom">
+            <img src="img2/5.jpeg" class="w-full h-full object-cover image-zoom">
+            <img src="img2/6.jpg" class="w-full h-full object-cover image-zoom">
+            <img src="img2/7.jpg" class="w-full h-full object-cover image-zoom">
+            <img src="img2/2.jpg" class="w-full h-full object-cover image-zoom">
+        
+            <!-- Gradient di bawah -->
+            <div class="absolute bottom-0 z-50 left-0 right-0 bg-gradient-to-t from-black to-transparent via-black/90 w-full h-[250px]"></div>
+        </div>
+        
+    </main>
+
+    <!-- Latest Work Section -->
+    <section class="py-20">
+        <div class="text-center space-y-4">
+            <p class="text-gray-500">end review human studio</p>
+            <h2 class="text-3xl font-bold">HUMAN.LET</h2>
+            <p class="text-gray-500 max-w-md mx-auto">
+                kamu bisa request fitur untuk menambah sesuatu disini
+            </p>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.image-zoom');
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once the image is visible
+                    }
+                });
+            });
+    
+            images.forEach(image => {
+                observer.observe(image);
+            });
+        });
+    </script>
+</body>
+</html>
