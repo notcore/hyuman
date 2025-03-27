@@ -130,7 +130,6 @@ body::-webkit-scrollbar{
     </style>
 </head>
 <body class="bg-black text-white">
-    <!-- Header -->
     <header class="flex justify-between items-center p-6">
         <div class="flex items-center space-x-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -182,29 +181,20 @@ body::-webkit-scrollbar{
                 <a href="" class="text-gray-500 hover:text-white"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-
-        <!-- Gallery -->
         <div class="relative grid grid-cols-2 md:grid-cols-4 gap-2 mt-20">
-            <!-- Gradient di atas -->
             <div class="absolute top-0 left-0 z-50 right-0 bg-gradient-to-b from-black to-transparent via-black/90 w-full h-[250px]"></div>
-        
-            <!-- Gambar dengan kelas image-zoom -->
-            <img src="img2/1.jpg" class="w-full h-full object-cover image-zoom">
-            <img src="img2/9.jpg" class="w-full h-full object-cover image-zoom">
-            <img src="img2/4.jpg" class="w-full h-full object-cover image-zoom">
-            <img src="img2/3.jpg" alt="Photographer adjusting camera settings" class="w-full h-full object-cover image-zoom">
-            <img src="img2/5.jpeg" class="w-full h-full object-cover image-zoom">
-            <img src="img2/6.jpg" class="w-full h-full object-cover image-zoom">
-            <img src="img2/7.jpg" class="w-full h-full object-cover image-zoom">
-            <img src="img2/2.jpg" class="w-full h-full object-cover image-zoom">
-        
-            <!-- Gradient di bawah -->
+            <img src="img2/1.webp" class="w-full h-full object-cover image-zoom">
+            <img src="img2/9.webp" class="w-full h-full object-cover image-zoom">
+            <img src="img2/4.webp" class="w-full h-full object-cover image-zoom">
+            <img src="img2/3.webp" alt="Photographer adjusting camera settings" class="w-full h-full object-cover image-zoom">
+            <img src="img2/5.webp" class="w-full h-full object-cover image-zoom">
+            <img src="img2/6.webp" class="w-full h-full object-cover image-zoom">
+            <img src="img2/7.webp" class="w-full h-full object-cover image-zoom">
+            <img src="img2/2.webp" class="w-full h-full object-cover image-zoom">
             <div class="absolute bottom-0 z-50 left-0 right-0 bg-gradient-to-t from-black to-transparent via-black/90 w-full h-[250px]"></div>
         </div>
         
     </main>
-
-    <!-- Latest Work Section -->
     <section class="py-20">
         <div class="text-center space-y-4">
             <p class="text-gray-500">end review human studio</p>
@@ -223,7 +213,7 @@ body::-webkit-scrollbar{
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Stop observing once the image is visible
+                        observer.unobserve(entry.target); 
                     }
                 });
             });
