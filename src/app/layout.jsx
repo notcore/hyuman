@@ -20,6 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+      <title>hyuman.let</title>
+      <link rel="icon" href="/img/hyuman.webp"/>
+    </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
