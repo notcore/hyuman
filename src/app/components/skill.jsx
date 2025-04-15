@@ -3,22 +3,22 @@ import Image from "next/image";
 function Skill(){
 
     const data = [
-        { url : 'svg/laravel.svg' ,
+        { url : '/svg/laravel.svg' ,
           name : 'laravel'
         } ,
-        { url : 'svg/vue.svg' ,
+        { url : '/svg/vue.svg' ,
           name : 'vue JS'
         } ,
-        { url : 'svg/tailwind-css.svg' ,
+        { url : '/svg/tailwind-css.svg' ,
           name : 'tailwind css'
         } ,
-        { url : 'svg/python.svg' ,
+        { url : '/svg/python.svg' ,
           name : 'python'
         } ,
-        { url : 'svg/react.svg' ,
+        { url : '/svg/react.svg' ,
           name : 'react JS'
         } ,
-        { url : 'svg/next.svg' ,
+        { url : '/svg/next.svg' ,
           name : 'next JS'
         }
     ]
