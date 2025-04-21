@@ -2,11 +2,12 @@
 import Image from "next/image";
 import { useEffect,useRef } from "react";
 import * as motion from "motion/react-client";
-import { Skill } from "@/app/components/skill.jsx";
-import { Navbar } from "@/app/components/navbar.jsx";
-import { Welcome } from "@/app/components/welcome.jsx";
-import { Aboutme } from "@/app/components/aboutme.jsx";
-import { Footer } from "@/app/components/footer.jsx";
+import { Skill } from "@/components/skill.jsx";
+import { Navbar } from "@/components/navbar.jsx";
+import { Welcome } from "@/components/welcome.jsx";
+import { Aboutme } from "@/components/aboutme.jsx";
+import { Footer } from "@/components/footer.jsx";
+import Penutup from "@/components/penutup";
 
 
 export default function Home() {
@@ -108,7 +109,9 @@ return (
     <Aboutme />
     <Skill />
     <div></div>
+    <Penutup />
     <Footer />
+    
 </div>
     )
 }

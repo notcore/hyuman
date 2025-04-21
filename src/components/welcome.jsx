@@ -2,7 +2,7 @@ function Welcome(){
   return (
     <div className="overflow-hidden mt-15 bg-white py-10">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+      <div className="mx-auto 2xl:grid-cols-1 2xl:place-items-center 2xl:place-content-center grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
         <div className="lg:pt-4 lg:pr-8">
           <div className="lg:max-w-lg mx-8 md:-ml-11 lg:ml-0">
             <h2 className="text-base/7 font-semibold text-indigo-600">
@@ -67,7 +67,7 @@ function Welcome(){
         />
         <img
           src="img/mobile.webp"
-          className="absolute w-[200px] mt-[320px] sm:mt-[300px] lg:-mt-5 right-2 h-auto"
+          className="absolute base:hidden 2xl:hidden w-[200px] mt-[320px] sm:mt-[300px] lg:-mt-5 right-2 h-auto"
           alt=""
         />
       </div>
