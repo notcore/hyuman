@@ -34,7 +34,7 @@ const gambar = [
             >
             Lihat lebih lengkap tap disini
             </a>
-            
+            <h1 className='mx-auto my-6'>comming soon -</h1>
             </div>
         </div>
     )
