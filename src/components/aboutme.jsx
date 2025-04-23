@@ -16,9 +16,10 @@ function Aboutme(){
           Hai, nama aku <span className="text-indigo-600">Dava Elyanta</span>
         </p>
         <p className="mt-4 text-lg text-gray-600 fade-in">
-          Aku seorang siswa SMK jurusan Teknik Jaringan Komputer &amp;
+          Aku seorang siswa kelas 11 SMK jurusan Teknik Jaringan Komputer &amp;
           Telekomunikasi. <br />
-          selalu belajar untuk beradaptasi dengan teknologi
+          selalu belajar untuk beradaptasi dengan teknologi. <br />
+          <span className="text-gray-400/70">"cuma mau ngasih tau kalo fotonya bisa di seret"</span>
           <br />
         </p>
         <h2 id="contact" className="text-sm fade-in mt-12 font-semibold text-indigo-600 uppercase tracking-wide">

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { motion } from "framer-motion"; // ✅ BENAR
+import { motion } from "framer-motion";
 
 
 function Penutup(){
@@ -19,9 +19,12 @@ const [muter,setMuter] = useState(false);
                     onClick={()=>setMuter(!muter)}
                     animate={{ rotate: muter ? 8 : 0 }}
                     transition={{ duration: 0.5 }}
-                    className="md:max-w-[650px] mx-auto lg:max-w-[800px] max-w-[310px] sm:max-w-[440px]" 
-                    src="/img/hyumanticket1.png" 
+                    className="md:max-w-[650px] mx-auto lg:max-w-[700px] max-w-[310px] sm:max-w-[440px]" 
+                    src="/img/hyumanticket1.webp" 
                 />
+                 <p className="fade-in text-gray-400/70">
+                "scane barcode diatas"
+                </p>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ import { Welcome } from "@/components/welcome.jsx";
 import { Aboutme } from "@/components/aboutme.jsx";
 import { Footer } from "@/components/footer.jsx";
 import Penutup from "@/components/penutup";
-
+import Pengalaman from "@/components/pengalaman";
 
 export default function Home() {
   return (
@@ -109,6 +109,7 @@ return (
     <Aboutme />
     <Skill />
     <div></div>
+    <Pengalaman />
     <Penutup />
     <Footer />
     
