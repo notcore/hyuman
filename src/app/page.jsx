@@ -110,7 +110,7 @@ return (
     <Skill />
     <div></div>
     <Pengalaman />
-    <Penutup />
+    {/* <Penutup /> */}
     <Footer />
     
 </div>

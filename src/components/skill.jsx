@@ -46,12 +46,15 @@ function Skill(){
   return(
     <div id="skill" className="flex py-4 my-22 w-screen justify-center">
       <div className="mx-10">
-        <h2 className="text-sm fade-in font-semibold text-indigo-600 uppercase tracking-wide">
+      <div className="animate-scroll">
+      <h2 className="text-sm fade-in font-semibold text-indigo-600 uppercase tracking-wide">
           skill
         </h2>
         <p className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl fade-in">
           framework dan bahasa yang aku pelajari
         </p>
+      </div>
+        
         <Looping />
         
       </div>
